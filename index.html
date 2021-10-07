@@ -6,12 +6,19 @@
         <meta name="description" content="This a meeting minutes within the meeting notebook">
         <title>Senior Design Week1 Meeting Minutes</title>
         <link rel="icon" href="Pic_Vid/A.Pic.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            header {
+                background-color:azure;
+                text-align:center;
+            }
+        </style>
     </head>
 
     <body>
         <header>
             <h1> Senior Design Week1 Meeting Minutes </h1> 
-            <h3> Participant: Simon Huang, Kevin Zhang, James Walson</h3>
+            <h3> Participant: <b style="text-decoration: line-through">Simon Huang, Kevin Zhang, James Walson</b></h3>
             <h4> October 1st, 1-2 pm </h4>
         </header>
 
@@ -26,13 +33,16 @@
         <main>
             <section>
                 <h2>Previous Meeting</h2>
-                <p>
-                    Previously, by criminal mind. <br>
-                    Oop! I am absent for the previous meting. <br>
-                    So, I know nothing about previous meeting. <br>
-                    <br>
-                    <div>Get useful information from <span>somewhere on Canvas<span></div>
-                </p>
+                <div class="wrapper">
+                    <p style="color:#6a0247">
+                        <div class="box nm">Previously, by criminal mind. <br>
+                            Oop! I am absent for the previous meting. <br>
+                            So, I know nothing about previous meeting. <br>
+                        </div>
+
+                        <div class="box cm">Get useful information from <span>somewhere on Canvas<span></span></div>
+                    </p>
+                </div>
             </section>
 
             <hr>
@@ -41,18 +51,27 @@
                 <h2>Important things mentioned by meeting</h2>
 
                 <h3>Have to do for living</h3>
-                <ur>
-                    <li>Do Work</li>
-                    <li>Do Eat</li>
-                    <li>Do Sleep</li>
-                </ur>
+                <div class="container">
+                    <div class="urCon">
+                        <ur>
+                            <li>Do Work</li>
+                            <li>Do Eat</li>
+                            <li>Do Sleep</li>
+                        </ur>
+                    </div>
+                </div>
+
 
                 <h3>Have to learn for senior design</h3>
-                <ol>
-                    <li>Data Conversion</li>
-                    <li>Deep Learning Model</li>
-                    <li>Data Interpreatation</li>
-                </ol>
+                <div class="container">
+                    <div class="olCon">
+                        <ol>
+                            <li>Data Conversion</li>
+                            <li>Deep Learning Model</li>
+                            <li>Data Interpreatation</li>
+                        </ol>
+                    </div>
+                </div>
             </section>
 
             <hr>
@@ -99,7 +118,7 @@
                 <p>
                     This is a heart breaking meeting, and heart have been squashed into that things in the picture below
                 </p>
-                <img src="Pic_Vid/B.Pic.png" alt="Pic_Vid/B.Pic.png" width="240" height="240">
+                    <img src="Pic_Vid/B.Pic.png" alt="Pic_Vid/B.Pic.png" width="240" height="240">
                 <p>
                     So I decided to sing a song to show my sadness after this meeting
                 </p>
@@ -168,10 +187,14 @@
 
             </section>
         </main>
-
-        <footer>
-            <p>YanJun Huang, Lab2@CSE110</p>
-        </footer>
+        
+        <div class="container">
+            <div class="box footer">
+                <footer>
+                    <p>YanJun Huang, Lab2@CSE110</p>
+                </footer>
+            </div>
+        </div>
 
     </body>
 
