@@ -13,13 +13,19 @@
     src: url("https://fonts.google.com/specimen/Akronim#standard-styles");
 }
 
+* p { color : darkslategrey; }
+
+input[value]{
+    font-size: 15px;
+}
+
 /* Adding color to lists */
 ur { color: maroon; }
 
 ol { color: rgb(50, 50, 50); }
 
 /* Editing the headers */
-h2 { color: rgb(32, 0, 126); }
+section + h2 { color: rgb(56, 22, 158); }
 
 /* decorating these boxes */
 .cm {
@@ -69,6 +75,9 @@ img.POS1 {
     left: 80px;
 }
 
+div ~ p {
+    background-color: azure;
+  }
 
 /* you have to put your mouse on it to see the hover */
 button:hover {
@@ -96,7 +105,7 @@ button:active {
 }
 
 #A {
-    background-color:red;
+    background-color:rgb(204, 27, 27);
     border: 1px solid black;
     width: 100px;
     height: 50px;
@@ -104,22 +113,15 @@ button:active {
     flex-grow: 1;
 }
 
-#B {
-    background-color:yellow;
+#B, #C {
+    background-color:azure;
     border: 1px solid black;
     width: 70px;
-    height: 100px;
-}
-
-#C {
-    background-color:blueviolet;
-    border: 1px solid black;
-    width: 50px;
-    height: 50px;
+    height: 70px;
 }
 
 #FE {
-    background-color:brown;
+    background-color:rgb(49, 35, 37);
     align-self: flex-end;
     border: 1px solid black;
     width: 200px;
