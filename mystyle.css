@@ -1,27 +1,38 @@
-/* Adding color to lists */
-ur {
-    color: maroon;
+@media only screen and (max-width: 1200px){
+    header {
+        background-color:black;
+        text-align:center;
+    }
+    body{
+        background-color:black;
+    }
 }
 
-ol {
-    color: rgb(50, 50, 50);
+@font-face {
+    font-family: "myFont";
+    src: url("https://fonts.google.com/specimen/Akronim#standard-styles");
 }
+
+/* Adding color to lists */
+ur { color: maroon; }
+
+ol { color: rgb(50, 50, 50); }
 
 /* Editing the headers */
-h2 {
-    color: rgb(32, 0, 126);
-}
+h2 { color: rgb(32, 0, 126); }
 
 /* decorating these boxes */
 .cm {
     width: 5cm;
     height: 35px;
+    min-width: 300px;
     border: 2pt solid rebeccapurple;
 }
 
 .nm {
     width: 20vw;
-    height: 3.5rem;
+    height: 4.5rem;
+    max-width: 250px;
     border-radius: 10px;
     border-width: 2pt;
     border-style: solid;
@@ -34,11 +45,11 @@ h2 {
     margin-right: 3px;
     margin-bottom: 3px;
     margin-left: 4ex;
+
+    position: static;
 }
 
-.footer{
-    margin:auto;
-}
+.footer{ margin:auto; }
 
 .box {
     padding-top: 15px;
@@ -47,7 +58,93 @@ h2 {
     padding-left: 15px;
   }
 
-.container {
-    padding: 0px 3px 3px 3px
+.container { padding: 0px 3px 3px 3px; }
+
+/* Try different Display */
+p.BL { color: red; display: block; }
+
+/* Using the position */
+img.POS1 {
+    position: relative;
+    left: 80px;
 }
 
+
+/* you have to put your mouse on it to see the hover */
+button:hover {
+    color: green;
+}
+
+/* you have to click it to see the active */
+button:active {
+    color: red;
+}
+
+#flex {
+  width: 200px;
+  height: 205px;
+  border: 1px solid #c3c3c3;
+  padding: 10pt 10pt 10pt 10pt;
+  display: flex;
+  flex-wrap:  wrap-reverse;
+  align-content: space-between;
+  justify-content:space-around;
+}
+
+#flex div {
+    font-size: 2pt;
+}
+
+#A {
+    background-color:red;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    flex-shrink: 3;
+    flex-grow: 1;
+}
+
+#B {
+    background-color:yellow;
+    border: 1px solid black;
+    width: 70px;
+    height: 100px;
+}
+
+#C {
+    background-color:blueviolet;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+#FE {
+    background-color:brown;
+    align-self: flex-end;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 3;
+    flex-grow: 8;
+}
+
+.grid-container {
+    display: grid;
+    padding: 10px;
+    width: 30%;
+    grid-column-start: col-start 2;
+}
+
+.grid-container > div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.itemA{
+    grid-area: sidebar;
+}
+
+.itemB{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
